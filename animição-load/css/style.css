@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+main {
+    padding: 6px 8px 1px 3px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 150px;
+    height: 70px;
+}
+.rad {
+    background-color: transparent;
+    width: 15px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 0 6px 6px 0;
+}
+.fluxo {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    height: 60px;
+    border: 3px solid transparent;
+    border-radius:  10px;
+
+    animation: carg 3s linear infinite   
+}
+@keyframes carg {
+    0% {
+        width: 0%;
+        background:red ;
+    }
+    25% {
+        width: 25%;
+        background:orange ;
+    }
+    50% {
+        width: 50%;
+        background:yellow ;
+    }
+    75% {
+        width: 75%;
+        background: #d7fc03;
+    }
+    100% {
+        width: 100%;
+        background: green;
+    }
+}
